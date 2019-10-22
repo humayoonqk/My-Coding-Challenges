@@ -1,5 +1,10 @@
+/* Humayoon Akhtar Qaimkhani */
+
+/* This program would take an array of integers between -1000 to 1000 with an array size of 10000 and returns the index
+whose sum of left adjacent elements will be equal to sum of right adjacent elements*/
+
 class Solution {
-    public int pivotIndex(int[] nums) {
+    public static int pivotIndex(int[] nums) {
         int temp1 = 0, temp2;
         int count = 0;
         
@@ -39,4 +44,13 @@ class Solution {
         }
         return -1;
     }
+    
+    public static void main(String[] args)
+    {
+      int index;
+      int[] numb = {1,2,3,1,2}; // you can use any array of any size
+      index = pivotIndex(numb);
+      System.out.println("The index is: " + index);
+    }
+    
 }
